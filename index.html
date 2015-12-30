@@ -5,9 +5,9 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    {% if(o.htmlWebpackPlugin.options.webpackManifest) { %}
-    <script>{%#o.htmlWebpackPlugin.options.webpackManifest%};</script>
-    {% } %}
 <body>
+{% if(o.htmlWebpackPlugin.options.webpackManifest) { %}
+<script>{%#o.htmlWebpackPlugin.options.webpackManifest%};</script>
+{% } %}
 </body>
 </html>
